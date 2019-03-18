@@ -1,9 +1,13 @@
 {
   "name": "app",
+  "jest": {
+    "verbose": true
+  },
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "test": "jest",
     "development": "nodemon ./bin/www"
   },
   "dependencies": {
@@ -16,6 +20,7 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "jest": "^24.5.0",
     "nodemon": "^1.18.10"
   }
 }
