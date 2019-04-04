@@ -1,4 +1,9 @@
-function sum(a,b){
-	return a + b;
+export default class LifeGame {
+	getInitialConfiguration(){
+		return {x:10,y:10}
+	}
+
+	builHtmlElemt(element) {
+		return `<${ element.tag } class="${ element.class || '' }">${element.inside}</${element.tag}>`;
+	}
 }
-module.exports = sum;

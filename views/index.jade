@@ -1,7 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  h2
-    p here is table
+    h1= title
+    p Welcome to #{title}
+    div
+        h2 Matrix
+        - var n= 0
+        table
+            while n < 4
+                tr= n++
+                - var m= 0
+                    while m < 5
+                        td= m++
